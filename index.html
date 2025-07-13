@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Ressources/favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <img src="logo-light.svg" alt="logo Alarado" id="logo-icon">
+            </a>
+
+            <!-- Navigation du bureau  -->
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="nav-link">A propos </a></li>
+                    <li><a href="#" class="nav-link">Produit</a></li>
+                    <li><a href="#" class="nav-link">Ressource</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Navigation mobile  -->
+            <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="#" class="nav-link">A propos </a></li>
+                    <li><a href="#" class="nav-link">Produit</a></li>
+                    <li><a href="#" class="nav-link">Ressource</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Commandes côté droit  -->
+            <div style="display: flex; align-items: center; gap: 15px; ">
+                <!-- bascule(toggle) -->
+                <div class="user-actions">
+                    <div class="icon-wrapper moon-icon" id="moonWrapper">
+                        <img src="Moon_fill_light.svg" id="moonIcon" alt="">
+                    </div>
+                    <div class="icon-wrapper sun-icon" id="sunWrapper">
+                        <img src="Sun_fill.svg" id="sunIcon" alt="">
+                    </div>
+                </div>
+
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+
+
+        <section>
+            <div class="intro-content">
+                <p class="tagline">😎 UNE FAÇON SIMPLE DE COMMUNIQUER</p>
+                <h1>
+                    Actions pour <br> l'accessibilité <br> dans la conception
+                </h1>
+                <p>
+                    Le moyen le plus rapide de créer et de déployer des sites Web avec des composants réutilisables.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="button primary-button">Commencer</a>
+                    <a href="#" class="button secondary-button">Obtenez une démo en direct</a>
+                </div>
+                <ul class="feature-checklist">
+                    <li>Aucune carte de crédit requise</li>
+                    <li>Aucun logiciel à installer</li>
+                </ul>
+            </div>
+            <div class="visual-showcase">
+                <img src="hero-image-simple-homepage.png" alt="">
+            </div>
+        </section>
+
+        <div class="author-info">
+            coded by
+            <a href="https://www.linkedin.com/in/abdallahsaoud/">
+                Tino Tino
+            </a>
+            Challenge by
+            <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
